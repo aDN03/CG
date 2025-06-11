@@ -1,0 +1,193 @@
+<world> 
+    <window width="1024" height="1024" />
+    <camera>
+        <position x="200" y="500" z="500" />
+        <lookAt x="0" y="0" z="0" />
+        <up x="0" y="1" z="0" />
+        <projection fov="25" near="1" far="2000" />
+    </camera>
+
+    <group> <!-- Sistema Solar -->
+        <group> <!-- Sol -->
+            <transform>
+                <scale x="30" y="30" z="30"/>
+            </transform>
+            <models>
+                <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_32_32.3d" />
+            </models>
+        </group>
+
+        <!-- Mercúrio -->
+        <group>
+            <transform>
+                <rotate angle="50" x="0" y="1" z="0"/>
+                <translate x="40" y="0" z="0"/>
+                <scale x="0.4" y="0.4" z="0.4"/>
+            </transform>
+            <models>
+                <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_16_16.3d" />
+            </models>
+        </group>
+
+        <!-- Vénus -->
+        <group>
+            <transform>
+                <rotate angle="120" x="0" y="1" z="0"/>
+                <translate x="55" y="0" z="0"/>
+                <scale x="0.9" y="0.9" z="0.9"/>
+            </transform>
+            <models>
+                <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_16_16.3d" />
+            </models>
+        </group>
+
+        <!-- Terra e Lua -->
+        <group>
+            <transform>
+                <rotate angle="180" x="0" y="1" z="0"/>
+                <translate x="70" y="0" z="0"/>
+            </transform>
+            <group> <!-- Terra -->
+                <transform>
+                    <scale x="1" y="1" z="1"/>
+                </transform>
+                <models>
+                    <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_32_32.3d" />
+                </models>
+            </group>
+            <group> <!-- Lua -->
+                <transform>
+                    <translate x="3" y="0" z="0"/>
+                    <scale x="0.3" y="0.3" z="0.3"/>
+                </transform>
+                <models>
+                    <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_16_16.3d" />
+                </models>
+            </group>
+        </group>
+
+        <!-- Marte e suas luas -->
+        <group>
+            <transform>
+                <rotate angle="250" x="0" y="1" z="0"/>
+                <translate x="95" y="0" z="0"/>
+            </transform>
+            <group> <!-- Marte -->
+                <transform>
+                    <scale x="0.6" y="0.6" z="0.6"/>
+                </transform>
+                <models>
+                    <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_16_16.3d" />
+                </models>
+            </group>
+            <group> <!-- Fobos -->
+                <transform>
+                    <translate x="2" y="0" z="1"/>
+                    <scale x="0.1" y="0.1" z="0.1"/>
+                </transform>
+                <models>
+                    <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_8_8.3d" />
+                </models>
+            </group>
+            <group> <!-- Deimos -->
+                <transform>
+                    <translate x="-2" y="0" z="-1.5"/>
+                    <scale x="0.08" y="0.08" z="0.08"/>
+                </transform>
+                <models>
+                    <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_8_8.3d" />
+                </models>
+            </group>
+        </group>
+
+        <!-- Júpiter -->
+        <group>
+            <transform>
+                <rotate angle="300" x="0" y="1" z="0"/>
+                <translate x="140" y="0" z="0"/>
+                <scale x="10" y="10" z="10"/>
+            </transform>
+            <models>
+                <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_32_32.3d" />
+            </models>
+        </group>
+
+        <!-- Saturno e Anel -->
+        <group>
+            <transform>
+                <rotate angle="45" x="0" y="1" z="0"/>
+                <translate x="190" y="0" z="0"/>
+            </transform>
+            <group> <!-- Saturno -->
+                <transform>
+                    <scale x="8" y="8" z="8"/>
+                </transform>
+                <models>
+                    <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_32_32.3d" />
+                </models>
+            </group>
+            <group> <!-- Anel -->
+                <transform>
+                    <rotate angle="130" x="1" y="0" z="1"/>
+                    <scale x="2" y="0.2" z="3"/>
+                </transform>
+                <models>
+                    <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/ring.3d" />
+                </models>
+            </group>
+        </group>
+
+        <!-- Úrano -->
+        <group>
+            <transform>
+                <rotate angle="120" x="0" y="1" z="0"/>
+                <translate x="230" y="0" z="0"/>
+                <scale x="5" y="5" z="5"/>
+            </transform>
+            <models>
+                <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_32_32.3d" />
+            </models>
+        </group>
+
+        <!-- Neptuno -->
+        <group>
+            <transform>
+                <rotate angle="200" x="0" y="1" z="0"/>
+                <translate x="280" y="0" z="0"/>
+                <scale x="4.5" y="4.5" z="4.5"/>
+            </transform>
+            <models>
+                <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_32_32.3d" />
+            </models>
+        </group>
+
+        <!-- Meteoros Aleatórios -->
+        <group>
+            <transform>
+                <translate x="-50" y="20" z="-80"/>
+                <scale x="0.8" y="0.8" z="0.8"/>
+            </transform>
+            <models>
+                <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_8_8.3d" />
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate x="90" y="-10" z="50"/>
+                <scale x="0.5" y="0.5" z="0.5"/>
+            </transform>
+            <models>
+                <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_8_8.3d" />
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate x="-120" y="30" z="110"/>
+                <scale x="1" y="1" z="1"/>
+            </transform>
+            <models>
+                <model file="/Users/flaviodrsousa/Desktop/CG2025/Fase2/outputs/sphere_1_8_8.3d" />
+            </models>
+        </group>
+    </group>
+</world>

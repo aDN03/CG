@@ -1,0 +1,5 @@
+/Users/flaviodrsousa/Desktop/CG2025/Fase4/src/build/CMakeFiles/tinyxml2.dir
+/Users/flaviodrsousa/Desktop/CG2025/Fase4/src/build/CMakeFiles/engine.dir
+/Users/flaviodrsousa/Desktop/CG2025/Fase4/src/build/CMakeFiles/generator.dir
+/Users/flaviodrsousa/Desktop/CG2025/Fase4/src/build/CMakeFiles/edit_cache.dir
+/Users/flaviodrsousa/Desktop/CG2025/Fase4/src/build/CMakeFiles/rebuild_cache.dir
